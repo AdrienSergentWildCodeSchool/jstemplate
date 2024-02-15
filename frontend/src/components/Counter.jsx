@@ -18,14 +18,13 @@ export default function Counter() {
   useEffect(() => {
     fetchitems();
   }, []);
-  console.info(items, "items");
   return (
     <p>
       <button
         type="button"
         onClick={() => setCount((oldCount) => oldCount + 1)}
       >
-        count is: {count}
+        count is: {count} {items && "ok"}
       </button>
     </p>
   );
