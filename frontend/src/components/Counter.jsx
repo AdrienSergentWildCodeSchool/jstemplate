@@ -6,7 +6,9 @@ export default function Counter() {
 
   const fetchitems = async () => {
     try {
-      const response = await fetch("api/items");
+      const response = await fetch(
+        "https://jstemplate-wild.onrender.com/api/items"
+      );
       const json = await response.json();
       setItems(json.results);
     } catch (error) {
