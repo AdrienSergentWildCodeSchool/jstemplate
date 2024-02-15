@@ -7,7 +7,7 @@ export default function Counter() {
   const fetchitems = async () => {
     try {
       const response = await fetch(
-        "https://deploy--sparkling-pavlova-b237f9.netlify.app/api/items"
+        "https://deploy-4y61.onrender.com/api/items"
       );
       const json = await response.json();
       setItems(json.results);
